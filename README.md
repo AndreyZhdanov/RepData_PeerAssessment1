@@ -299,26 +299,26 @@ act.extended[sample(nrow(act), size=20),]
 
 ```
 ##           steps       date interval  weekdays dayType
-## 2555    0.00000 2012-10-09     2050   Tuesday weekday
-## 12468  92.00000 2012-11-13      655   Tuesday weekday
-## 9477    0.00000 2012-11-02     2140    Friday weekday
-## 7745    0.00000 2012-10-27     2120  Saturday weekend
-## 15742 522.00000 2012-11-24     1545  Saturday weekend
-## 13231   0.00000 2012-11-15     2230  Thursday weekday
-## 16379   0.00000 2012-11-26     2050    Monday weekday
-## 16095   0.00000 2012-11-25     2110    Sunday weekend
-## 17036   0.00000 2012-11-29      335  Thursday weekday
-## 2158   44.60377 2012-10-08     1145    Monday weekday
-## 16650  31.00000 2012-11-27     1925   Tuesday weekday
-## 11328  56.15094 2012-11-09      755    Friday weekday
-## 8713    0.00000 2012-10-31      600 Wednesday weekday
-## 2820    0.00000 2012-10-10     1855 Wednesday weekday
-## 13230   0.00000 2012-11-15     2225  Thursday weekday
-## 1418    0.00000 2012-10-05     2205    Friday weekday
-## 606     0.00000 2012-10-03      225 Wednesday weekday
-## 1591   71.00000 2012-10-06     1230  Saturday weekend
-## 14457   0.00000 2012-11-20      440   Tuesday weekday
-## 1877    0.00000 2012-10-07     1220    Sunday weekend
+## 6735   90.00000 2012-10-24      910 Wednesday weekday
+## 13034   0.00000 2012-11-15      605  Thursday weekday
+## 9967   41.84906 2012-11-04     1430    Sunday weekend
+## 11992   0.00000 2012-11-11     1515    Sunday weekend
+## 5712  529.00000 2012-10-20     1955  Saturday weekend
+## 7415    0.00000 2012-10-26     1750    Friday weekday
+## 3497    0.00000 2012-10-13      320  Saturday weekend
+## 14023 746.00000 2012-11-18     1630    Sunday weekend
+## 11474  19.01887 2012-11-09     2005    Friday weekday
+## 4967    0.00000 2012-10-18      550  Thursday weekday
+## 7069    0.00000 2012-10-25     1300  Thursday weekday
+## 6494   40.00000 2012-10-23     1305   Tuesday weekday
+## 15182  71.00000 2012-11-22     1705  Thursday weekday
+## 7364   80.00000 2012-10-26     1335    Friday weekday
+## 11902  14.00000 2012-11-11      745    Sunday weekend
+## 14687   0.00000 2012-11-20     2350   Tuesday weekday
+## 1516   36.00000 2012-10-06      615  Saturday weekend
+## 8106    0.00000 2012-10-29      325    Monday weekday
+## 924     0.00000 2012-10-04      455  Thursday weekday
+## 7965    0.00000 2012-10-28     1540    Sunday weekend
 ```
 Make 5 minutes intervals matrix, create weekend flag and build two plots as required:
 
@@ -339,4 +339,4 @@ plot(s5m.ext$interval[wEnd], s5m.ext$steps[wEnd],
 Ok. As expected movind starting a little bit earlier in working days, but less intensive during the day.
 
 ##End Note
-That is the end. It is time to submit. Thank you for your attention. Good luck! Take care, do sport!
+This is the end. It is time to submit. Thank you for your attention. Good luck! Take care, do sport!
