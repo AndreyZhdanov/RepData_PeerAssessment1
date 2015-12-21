@@ -219,26 +219,26 @@ act.extended$weekdays &lt;- weekdays(as.Date(act.nna.mean$date))</code></pre>
         'weekday'))
 act.extended[sample(nrow(act), size=20),]</code></pre>
 <pre><code>##            steps       date interval  weekdays dayType
-## 10538  0.0000000 2012-11-06     1405   Tuesday weekday
-## 4039   0.0000000 2012-10-15       30    Monday weekday
-## 12068 13.0000000 2012-11-11     2135    Sunday weekend
-## 2069   0.3396226 2012-10-08      420    Monday weekday
-## 16971  0.0000000 2012-11-28     2210 Wednesday weekday
-## 928   18.0000000 2012-10-04      515  Thursday weekday
-## 9022  69.5471698 2012-11-01      745  Thursday weekday
-## 13306  0.0000000 2012-11-16      445    Friday weekday
-## 1782   0.0000000 2012-10-07      425    Sunday weekend
-## 1529   0.0000000 2012-10-06      720  Saturday weekend
-## 2792   0.0000000 2012-10-10     1635 Wednesday weekday
-## 15483  0.0000000 2012-11-23     1810    Friday weekday
-## 8955   1.1320755 2012-11-01      210  Thursday weekday
-## 12603 21.0000000 2012-11-13     1810   Tuesday weekday
-## 15777  0.0000000 2012-11-24     1840  Saturday weekend
-## 9621  60.0000000 2012-11-03      940  Saturday weekend
-## 12567  0.0000000 2012-11-13     1510   Tuesday weekday
-## 17309  0.0000000 2012-11-30      220    Friday weekday
-## 8831   0.0000000 2012-10-31     1550 Wednesday weekday
-## 8670   0.0000000 2012-10-31      225 Wednesday weekday</code></pre>
+## 2130   95.962264 2012-10-08      925    Monday weekday
+## 108   167.018868 2012-10-01      855    Monday weekday
+## 16635  55.000000 2012-11-27     1810   Tuesday weekday
+## 2738  413.000000 2012-10-10     1205 Wednesday weekday
+## 2034    1.113208 2012-10-08      125    Monday weekday
+## 7492    0.000000 2012-10-27       15  Saturday weekend
+## 9503    0.000000 2012-11-02     2350    Friday weekday
+## 15384   0.000000 2012-11-23      955    Friday weekday
+## 1908    0.000000 2012-10-07     1455    Sunday weekend
+## 11521   1.716981 2012-11-10        0  Saturday weekend
+## 4218    4.000000 2012-10-15     1525    Monday weekday
+## 2263   27.301887 2012-10-08     2030    Monday weekday
+## 17339   3.113208 2012-11-30      450    Friday weekday
+## 3711    0.000000 2012-10-13     2110  Saturday weekend
+## 14714   0.000000 2012-11-21      205 Wednesday weekday
+## 9946   37.735849 2012-11-04     1245    Sunday weekend
+## 11429  56.905660 2012-11-09     1620    Friday weekday
+## 12803  25.094340 2012-11-14     1050 Wednesday weekday
+## 3594   79.000000 2012-10-13     1125  Saturday weekend
+## 5729    0.000000 2012-10-20     2120  Saturday weekend</code></pre>
 <p>Make 5 minutes intervals matrix, create weekend flag and build two plots as required:</p>
 <pre class="r"><code>s5m.ext &lt;- aggregate(steps ~ interval+dayType, act.extended, mean)
 wEnd &lt;- s5m.ext$dayType == 'weekend'
