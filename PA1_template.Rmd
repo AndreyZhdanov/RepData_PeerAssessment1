@@ -217,4 +217,4 @@ plot(s5m.ext$interval[wEnd], s5m.ext$steps[wEnd],
 Ok. As expected movind starting a little bit earlier in working days, but less intensive during the day.
 
 ##End Note
-That is the end. It is time to submit. Thank you for your attention. Good luck! Take care, do sport!
+This is the end. It is time to submit. Thank you for your attention. Good luck! Take care, do sport!
